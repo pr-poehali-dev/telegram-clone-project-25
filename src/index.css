@@ -4,89 +4,106 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 30% 96%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 213 94% 52%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 92%;
+    --muted-foreground: 215 16% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 213 94% 52%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 213 94% 52%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Glassmorphism vars */
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-border: rgba(255, 255, 255, 0.7);
+    --glass-shadow: 0 8px 32px rgba(31, 90, 180, 0.12);
+    --glass-blur: blur(20px);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-bg: rgba(255, 255, 255, 0.45);
+    --chat-bg: rgba(255, 255, 255, 0.35);
 
-    --sidebar-primary: 240 5.9% 10%;
+    --msg-out: rgba(42, 130, 255, 0.92);
+    --msg-in: rgba(255, 255, 255, 0.75);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --gradient-bg: linear-gradient(
+      135deg,
+      #e8f4ff 0%,
+      #d1e9ff 30%,
+      #e0d7ff 60%,
+      #fce4ff 100%
+    );
+    --gradient-accent: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222 47% 7%;
+    --foreground: 210 40% 96%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 96%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 213 94% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 96%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 213 94% 58%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 40%;
+    --destructive-foreground: 210 40% 96%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 213 94% 58%;
+
+    --glass-bg: rgba(15, 25, 50, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --glass-blur: blur(20px);
+
+    --sidebar-bg: rgba(10, 18, 40, 0.65);
+    --chat-bg: rgba(8, 14, 32, 0.5);
+
+    --msg-out: rgba(37, 99, 235, 0.95);
+    --msg-in: rgba(30, 40, 70, 0.8);
+
+    --gradient-bg: linear-gradient(
+      135deg,
+      #0a0f1e 0%,
+      #0d1a3a 40%,
+      #1a0d30 70%,
+      #200d25 100%
+    );
+    --gradient-accent: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   }
 }
 
@@ -94,8 +111,168 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
+    font-family:
+      "Golos Text",
+      -apple-system,
+      sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(100, 130, 200, 0.25);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 130, 200, 0.45);
+  }
+}
+
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-sidebar {
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+  }
+
+  .glass-chat {
+    background: var(--chat-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .msg-bubble-out {
+    background: var(--msg-out);
+    color: white;
+    border-radius: 18px 18px 4px 18px;
+  }
+
+  .msg-bubble-in {
+    background: var(--msg-in);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px 18px 18px 4px;
+  }
+
+  .chat-item {
+    transition: all 0.2s ease;
+    border-radius: 14px;
+  }
+
+  .chat-item:hover {
+    background: rgba(37, 99, 235, 0.08);
+    transform: translateX(2px);
+  }
+
+  .chat-item.active {
+    background: rgba(37, 99, 235, 0.12);
+  }
+
+  .online-dot {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    animation: pulse-online 2s infinite;
+  }
+
+  @keyframes pulse-online {
+    0% {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+  }
+
+  .gradient-bg {
+    background: var(--gradient-bg);
+  }
+
+  .btn-send {
+    background: var(--gradient-accent);
+    transition: all 0.2s ease;
+  }
+
+  .btn-send:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-message {
+    animation: fade-in-up 0.25s ease forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-chat-item {
+    animation: slide-in 0.3s ease forwards;
+  }
+
+  .typing-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: hsl(var(--muted-foreground));
+    animation: typing-bounce 1.2s infinite;
+  }
+
+  .typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes typing-bounce {
+    0%,
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.4;
+    }
+    30% {
+      transform: translateY(-5px);
+      opacity: 1;
+    }
   }
 }
